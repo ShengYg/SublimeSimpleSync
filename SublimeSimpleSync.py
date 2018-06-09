@@ -213,6 +213,7 @@ class ScpCopier(threading.Thread, syncCommand):
             if self.password:
                 pw = ['-pw', self.password]
             args.extend(pw)
+            args.extend(['-i', '.ssh\\ppk.ppk'])
             shell = False
         else:
             args = ['scp']
