@@ -3,21 +3,16 @@
 // { "keys": ["alt+shift+s"], "command": "sublime_simple_sync_path"}
 {
   "config": {
-    "autoSync": false,
+    "autoSync": true,
     "debug": false,
     "timeout": 10
   },
   "rules": [
   {
-    "type": "ssh", "host": "domain or ip", "port": "22",
-    "username": "userName", "password": "passWord", // support windows/Mac/linux
-    "local" : "/Users/projects/projectA",
-    "remote" : "/home/projectA/"
+    "type": "ssh", "host": "42.186.59.183", "port": "32200",
+    "username": "shengyang", "password": "shengyang", // support windows/Mac/linux
+    "local" : "D:\\study\\trans",
+    "remote" : "/home/shengyang/code/trans"
   },
-  {
-    "type" : "local",
-    "local" : "E:\\projectFolder\\projectA",
-    "remote" : "D:\\bakup\\projectA"
-  }
   ]
 }
